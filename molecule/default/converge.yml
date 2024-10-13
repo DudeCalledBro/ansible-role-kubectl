@@ -1,0 +1,11 @@
+- name: Converge
+  hosts: all
+  pre_tasks:
+  - name: Update cache (debian)
+    ansible.builtin.apt:
+      update_cache: true
+      cache_valid_time: 600
+    when: ansible_os_family == 'Debian'
+
+  roles:
+  - dudecalledbro.kubectl

@@ -1,0 +1,6 @@
+argument_specs:
+  main:
+    short_description: kubectl
+    description: "Install kubernetes client."
+    author: dudecalledbro
+    options: {}

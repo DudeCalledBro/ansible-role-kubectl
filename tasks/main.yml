@@ -1,0 +1,4 @@
+- name: Install kubernetes-client (kubectl)
+  ansible.builtin.package:
+    name: kubernetes-client
+    state: present
